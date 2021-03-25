@@ -90,6 +90,9 @@ textarea {
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: rgb(110, 110, 110);
+}
 header{
   display:flex;
   flex-direction: column;
@@ -103,8 +106,10 @@ ul{
   list-style-type: none;
 }
 li{
-  height: 10vh;
-  border: solid white 1px;
+  text-align: center;
+  padding-top: 5%;
+  height: 7vh;
+  border: solid black 1px;
 }
 .logo{
  width:40vh;
@@ -112,13 +117,17 @@ height: auto;
 }
 .main-nav{
   display:flex;
-  /* background-color: mediumvioletred; */
 }
 .menu{
-  display:none;
+  flex-basis: 100%;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .1s ease-in-out;
 }
 .menu-checkbox:checked ~.menu{
-  display:block;
+  max-height: 1000px;
+  margin: 1em 0;
 }
 
 
@@ -142,6 +151,7 @@ height: auto;
 .menu{
   width: 100vw;
   max-height:0;
+
   
 }
 .Btn_menu{
