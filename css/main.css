@@ -112,7 +112,7 @@ height: auto;
 }
 .main-nav{
   display:flex;
-  background-color: mediumvioletred;
+  /* background-color: mediumvioletred; */
 }
 .menu{
   display:none;
@@ -131,7 +131,7 @@ height: auto;
 
 .menu-toggle {
   padding: 0.5em 1em;
-  background-color: midnightblue;
+  /* background-color: midnightblue; */
   
 }
 .wrapper{
@@ -143,6 +143,9 @@ height: auto;
   width: 100vw;
   max-height:0;
   
+}
+.Btn_menu{
+  height: 2em;
 }
 /* ==========================================================================
    Helper classes
