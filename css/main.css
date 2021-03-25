@@ -111,7 +111,7 @@ footer{
   height: 10vh;
   background-color: rgb(31, 30, 30);
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   
 
 }
@@ -120,7 +120,9 @@ footer{
   height: auto;
   margin-right: 3vw;
 }
-
+.CGU{
+  margin-left: 5vw;;
+}
 ul{
   list-style-type: none;
 
