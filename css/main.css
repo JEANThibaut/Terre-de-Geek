@@ -91,7 +91,11 @@ textarea {
   padding: 0;
 }
 body{
+  min-height: 100vh;
   background-color: rgb(110, 110, 110);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 header{
   display:flex;
@@ -100,6 +104,21 @@ header{
   height:auto;
   background: url("../img/background_header.jpg");
   background-repeat: no-repeat;
+  
+}
+footer{
+  display:flex;
+  height: 10vh;
+  background-color: rgb(31, 30, 30);
+  align-items: center;
+  justify-content: space-around;
+  
+
+}
+.social{
+  width: 5vh;
+  height: auto;
+  margin-right: 3vw;
 }
 
 ul{
@@ -143,23 +162,24 @@ height: auto;
 	position: absolute;
 	top: -1000px;
 }
-
+/* Menu Button */
 .menu-toggle {
   padding: 0.5em 1em;  
 }
+.Btn_menu{
+  height: 2em;
+}
+/* Menu wrap */
 .wrapper{
   display:flex;
   flex-wrap:wrap;
 
-  
 }
 .menu{
   width: 100vw;
   max-height:0;
 }
-.Btn_menu{
-  height: 2em;
-}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
