@@ -99,17 +99,23 @@ header{
   align-items: center;
   height:auto;
   background: url("../img/background_header.jpg");
-
-  
+  background-repeat: no-repeat;
 }
+
 ul{
   list-style-type: none;
+
 }
+
 li{
   text-align: center;
-  padding-top: 5%;
-  height: 7vh;
-  border: solid black 1px;
+  margin-top: 1em;
+  height: 10vh;
+}
+
+li img{
+  width: 40vh;
+  height: auto;
 }
 .logo{
  width:40vh;
@@ -139,20 +145,17 @@ height: auto;
 }
 
 .menu-toggle {
-  padding: 0.5em 1em;
-  /* background-color: midnightblue; */
-  
+  padding: 0.5em 1em;  
 }
 .wrapper{
   display:flex;
   flex-wrap:wrap;
+
   
 }
 .menu{
   width: 100vw;
   max-height:0;
-
-  
 }
 .Btn_menu{
   height: 2em;
