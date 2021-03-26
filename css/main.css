@@ -95,7 +95,7 @@ body{
   background-color: rgb(110, 110, 110);
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 header{
   display:flex;
@@ -105,6 +105,15 @@ header{
   background: url("../img/background_header.jpg");
   background-repeat: no-repeat;
   
+}
+.background{
+  display:flex;
+}
+.background img{
+  width: 100%;
+  height: auto;
+  
+ 
 }
 footer{
   display:flex;
