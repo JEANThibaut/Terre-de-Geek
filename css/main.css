@@ -99,18 +99,23 @@ body{
 .contact{
   background-image: url("../img/background_contact.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .products{
   background-image: url("../img/background_products.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .services{
   background-image: url("../img/background_services.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .index{
   background-image: url("../img/background_accueil.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left ;
 }
 header{
   display:flex;
@@ -129,9 +134,8 @@ footer{
   background-color: rgb(31, 30, 30);
   align-items: center;
   justify-content: space-between;
-  
-
 }
+
 .social{
   width: 5vh;
   height: auto;
@@ -140,9 +144,9 @@ footer{
 .CGU{
   margin-left: 5vw;;
 }
+
 ul{
   list-style-type: none;
-
 }
 
 li{
@@ -155,13 +159,16 @@ li img{
   width: 40vh;
   height: auto;
 }
+
 .logo{
  width:40vh;
 height: auto;
 }
+
 .main-nav{
   display:flex;
 }
+
 .menu{
   flex-basis: 100%;
   margin: 0;
@@ -169,6 +176,7 @@ height: auto;
   overflow: hidden;
   transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .1s ease-in-out;
 }
+
 .menu-checkbox:checked ~.menu{
   max-height: 1000px;
   margin: 1em 0;
@@ -185,6 +193,7 @@ height: auto;
 .menu-toggle {
   padding: 0.5em 1em;  
 }
+
 .Btn_menu{
   height: 2em;
 }
@@ -192,13 +201,39 @@ height: auto;
 .wrapper{
   display:flex;
   flex-wrap:wrap;
-
 }
+
 .menu{
   width: 100vw;
   max-height:0;
 }
 
+/* TouchPad Code */
+
+@media screen and (min-width:768px){
+  header{
+    height: 30vh;
+  }
+  .menu-toggle{
+    display:none;
+  }
+  .menu{
+    display: flex;
+    overflow: visible;
+  }
+  li{
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  li img{
+    max-width: 20vw;
+    height: auto;
+  }
+}
+
+@media screen and (min-width:1024px){
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
