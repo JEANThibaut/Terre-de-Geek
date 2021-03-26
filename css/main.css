@@ -216,21 +216,22 @@ height: auto;
 }
 container{
   background-color: rgba(255, 255, 255, 0.9) ;
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
   margin-top: 1em;
-}
-
-.scroll_horizontal{
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-
-}
-container{
+  margin-bottom: 1em;
   flex: 0 0 auto;
   text-align: center;
 }
+
+.scroll_horizontal{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
 container h1{
   font-family: 'Orbitron', sans-serif;
   text-align: center;
