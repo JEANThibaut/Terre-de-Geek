@@ -90,7 +90,13 @@ textarea {
   margin: 0;
   padding: 0;
 }
+
+ 
+
+
 body{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   display:flex;
   flex-direction: column;
@@ -100,6 +106,7 @@ body{
   background-image: url("../img/background_contact.png");
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 .products{
   background-image: url("../img/background_products.png");
@@ -206,6 +213,27 @@ height: auto;
 .menu{
   width: 100vw;
   max-height:0;
+}
+container{
+  background-color: rgba(255, 255, 255, 0.9) ;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 1em;
+}
+
+.scroll_horizontal{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+}
+container{
+  flex: 0 0 auto;
+  text-align: center;
+}
+container h1{
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
 }
 
 /* TouchPad Code */
