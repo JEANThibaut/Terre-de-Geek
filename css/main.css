@@ -91,7 +91,19 @@ textarea {
   padding: 0;
 }
 
- 
+/* Scrollbar custom */
+::-webkit-scrollbar {
+  width:12px;
+  height: 5px;
+  background-color: grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 5px;
+  border: 3px solid blue;
+}
+/* ----------- */
 
 
 body{
@@ -102,11 +114,101 @@ body{
   flex-direction: column;
   justify-content: space-between;
 }
+
+header{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height:auto;
+  background: url("../img/background_header.jpg");
+  background-repeat: no-repeat;  
+}
+
+footer{
+  display:flex;
+  height: 10vh;
+  background-color: rgb(31, 30, 30);
+  align-items: center;
+  justify-content: space-between;
+}
+.social{
+  width: 5vh;
+  height: auto;
+  margin-right: 3vw;
+}
+.CGU{
+  margin-left: 5vw;
+}
+
+
+ul{
+  list-style-type: none;
+}
+li{
+  text-align: center;
+  margin-top: 1em;
+  height: 10vh;
+}
+li img{
+  width: 40vh;
+  height: auto;
+}
+.main-logo{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.logo{
+ width:40vh;
+height: auto;
+}
+.main-nav{
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+}
+.menu{
+  flex-basis: 100%;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .1s ease-in-out;
+}
+.menu div{
+  display: flex;
+  flex-direction: column;
+}
+.menu-checkbox:checked ~.menu{
+  max-height: 1000px;
+  margin: 1em 0;
+}
+/* Hide checkbox for keep focus for Keyboard only */
+.menu-checkbox {
+	opacity: 0;
+	position: absolute;
+	top: -1000px;
+}
+/* Menu Button */
+.menu-toggle {
+  padding: 0.5em 1em;
+}
+.Btn_menu{
+  height: 2em;
+}
+/* Menu wrap */
+.wrapper{
+  display:flex;
+  flex-wrap:wrap;
+}
+.menu{
+  max-height:0;
+  width: 100vw;
+}
+/* Menu bacgroung Img */
 .contact{
   background-image: url("../img/background_contact.png");
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 .products{
   background-image: url("../img/background_products.png");
@@ -124,106 +226,23 @@ body{
   background-repeat: no-repeat;
   background-position: left ;
 }
-header{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  height:auto;
-  background: url("../img/background_header.jpg");
-  background-repeat: no-repeat;
-  
-}
 
 
-footer{
-  display:flex;
-  height: 10vh;
-  background-color: rgb(31, 30, 30);
-  align-items: center;
-  justify-content: space-between;
-}
-
-.social{
-  width: 5vh;
-  height: auto;
-  margin-right: 3vw;
-}
-.CGU{
-  margin-left: 5vw;;
-}
-
-ul{
-  list-style-type: none;
-}
-
-li{
-  text-align: center;
-  margin-top: 1em;
-  height: 10vh;
-}
-
-li img{
-  width: 40vh;
-  height: auto;
-}
-
-.logo{
- width:40vh;
-height: auto;
-}
-
-.main-nav{
-  display:flex;
-}
-
-.menu{
-  flex-basis: 100%;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .1s ease-in-out;
-}
-
-.menu-checkbox:checked ~.menu{
-  max-height: 1000px;
-  margin: 1em 0;
-}
-
-
-/* Hide checkbox for keep focus for Keyboard only */
-.menu-checkbox {
-	opacity: 0;
-	position: absolute;
-	top: -1000px;
-}
-/* Menu Button */
-.menu-toggle {
-  padding: 0.5em 1em;  
-}
-
-.Btn_menu{
-  height: 2em;
-}
-/* Menu wrap */
-.wrapper{
-  display:flex;
-  flex-wrap:wrap;
-}
-
-.menu{
-  width: 100vw;
-  max-height:0;
-}
 container{
   background-color: rgba(255, 255, 255, 0.9) ;
   width: 90%;
   margin-left: 5%;
   margin-top: 1em;
   margin-bottom: 1em;
+  padding-bottom: 2em;
   flex: 0 0 auto;
   text-align: center;
 }
 
+container h1{
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
 .scroll_horizontal{
   margin-left: 5%;
   margin-right: 5%;
@@ -232,16 +251,14 @@ container{
   overflow-x: auto;
 }
 
-container h1{
-  font-family: 'Orbitron', sans-serif;
-  text-align: center;
-}
+
 
 /* TouchPad Code */
 
 @media screen and (min-width:768px){
   header{
     height: 30vh;
+   
   }
   .menu-toggle{
     display:none;
@@ -249,6 +266,11 @@ container h1{
   .menu{
     display: flex;
     overflow: visible;
+    justify-content: space-around;
+    max-width: 100vw;
+  }
+  .menu div{
+    flex-direction: row;
   }
   li{
     display:flex;
@@ -261,8 +283,11 @@ container h1{
   }
 }
 
-@media screen and (min-width:1024px){
-  
+#ameliorer{
+  width: 70vw;
+  height: auto;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

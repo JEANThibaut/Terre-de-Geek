@@ -14,10 +14,10 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+ 
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -28,19 +28,23 @@
 
 <body class="index">
   <header>
-    <div>
+    <div class="main-logo">
       <img class="logo" src="img/logo_darkblue.png" alt="Logo"> 
-      </div>
+    </div>
  
     <nav class="main-nav">
       <div class="wrapper">
         <input type="checkbox" id="menu-checkbox"class="menu-checkbox">
         <label for="menu-checkbox" class="menu-toggle"><img class="Btn_menu" src="img/Btn_menu_darkblue.png" alt="Btn menu"></label>
         <ul class="menu">
-          <li><a href="index.html"><img src="img/accueil_darkblue.png" alt="acceuil"></a></li>
-          <li><a href="services.html"><img src="img/service_purple.png" alt="services"></a></li>
-          <li><a href="products.html"><img src="img/produits_green.png" alt="produits"></a></li>
-          <li><a href="contact.html"><img src="img/contact_blue.png" alt="contact"></a></li>
+          <div>
+            <li><a href="index.html"><img src="img/accueil_darkblue.png" alt="acceuil"></a></li>
+            <li><a href="services.html"><img src="img/service_purple.png" alt="services"></a></li>
+          </div>
+          <div>
+            <li><a href="products.html"><img src="img/produits_green.png" alt="produits"></a></li>
+            <li><a href="contact.html"><img src="img/contact_blue.png" alt="contact"></a></li>
+          </div>  
         </ul>
       </div>  
     </nav>

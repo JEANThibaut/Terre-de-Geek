@@ -14,7 +14,9 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -40,9 +42,58 @@
         </ul>
       </div>  
     </nav>
-  </header>      
+  </header>    
   
+  <container>
+<h1> Nous contacter</h1>
+<p>Afin de nous faire parvenir aux mieux vos requêtes, avis ou réclamation, 
+  merci de remplir le formuliare ci-dessous: </p>
 
+  </container>
+  <!-- Formulaire -->
+
+<container> 
+      <div class="formulaire">
+        <form method="post" action="traitement.php">
+          <p>
+            <labe>Nom : </br></label> <input type="text" name="Nom" />
+          </p>
+          <p>
+            <label>Prénom : </br></label> <input type="text" name="Prenom" />
+          </p>
+          <p>
+            <labe>Téléphone : </br></label> <input type="tel" name="tel" />
+          </p>
+          <p>
+            <labe>Mail : </br></label> <input type="email" name="email" />
+          </p>
+          <p>
+            <label>Age : </br></label> <input type="number" name="Age" />
+          </p>
+
+          <label for="motifs">Motifs: </br></label>
+
+            <select name="motifs" id="why">
+              <option value="info">Information</option>
+              <option value="reclamation">Réclamation</option>
+              <option value="partenariat">Partenariat</option>
+              <option value="other">Autres</option>
+            </select>
+
+            <form method="post" action="traitement.php">
+              <p>
+                  <label for="ameliorer">
+                  Votre message
+                  </label>
+                  <br />
+                  
+                  <textarea name="ameliorer" id="ameliorer" rows="10" cols="50"></textarea>       
+              </p>
+          </form>
+
+        </form>
+      </div>
+    </container> 
   <footer>
     <div class="CGU">
       <a href="CGV.html">CGU</a> 
