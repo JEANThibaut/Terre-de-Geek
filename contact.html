@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Nous contacter</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,7 +26,7 @@
 
 <body class="contact">
   <header>
-    <img class="logo" src="img/logo_darkblue.png" alt="Logo"> 
+    <img class="logo" src="img/logo_blue.png" alt="Logo"> 
     <div class="menu-base">
       <div class="list">
         <li><a href="index.html"><img src="img/accueil_darkblue.png" alt="acceuil"></a></li>
@@ -40,7 +40,7 @@
     <div class="main-nav">
       <div class="wrapper">
         <input type="checkbox" id="menu-checkbox"class="menu-checkbox">
-        <label for="menu-checkbox" class="menu-toggle"><img class="Btn_menu" src="img/Btn_menu_darkblue.png" alt="Btn menu"></label>
+        <label for="menu-checkbox" class="menu-toggle"><img class="Btn_menu" src="img/Btn_menu_blue.png" alt="Btn menu"></label>
         <ul class="menu">
             <li><a href="index.html"><img src="img/accueil_darkblue.png" alt="acceuil"></a></li>
             <li><a href="services.html"><img src="img/service_purple.png" alt="services"></a></li>
@@ -51,53 +51,51 @@
     </div>     
 </header>
   
-  <div class="scroll_horizontal">
-    <container>
+<container>
   <h1> Nous contacter</h1>
   <p>Afin de nous faire parvenir aux mieux vos requêtes, avis ou réclamation, 
-    merci de remplir le formuliare ci-dessous: </p>
-    </container>
-    <!-- Formulaire -->
+    merci de remplir le formulaire suivant: </p>
+  </container>
 
+  <div class="scroll_horizontal">
+
+    <!-- Formulaire -->
 <container > 
       <div class="formulaire">
         <form method="post" action="traitement.php">
           <p>
-            <labe>Nom : </br></label> <input type="text" name="Nom" />
+            <labe>Nom : </br></label> <input type="text" name="Nom" required/>
           </p>
           <p>
-            <label>Prénom : </br></label> <input type="text" name="Prenom" />
+            <label>Prénom : </br></label> <input type="text" name="Prenom" required />
           </p>
           <p>
             <labe>Téléphone : </br></label> <input type="tel" name="tel" />
           </p>
           <p>
-            <labe>Mail : </br></label> <input type="email" name="email" />
+            <labe>Mail : </br></label> <input type="email" name="email" required/>
           </p>
           <p>
-            <label>Age : </br></label> <input type="number" name="Age" />
+            <label>Age : </br></label> <input type="number" name="Age" required/>
           </p>
-
           <label for="motifs">Motifs: </br></label>
-
             <select name="motifs" id="why">
               <option value="info">Information</option>
               <option value="reclamation">Réclamation</option>
               <option value="partenariat">Partenariat</option>
               <option value="other">Autres</option>
             </select>
-
-            <form method="post" action="traitement.php">
-              <p>
-                  <label for="ameliorer">
-                  Votre message
-                  </label>
-                  <br />
-                  
-                  <textarea name="ameliorer" id="ameliorer" rows="10" cols="50"></textarea>       
-              </p>
-          </form>
-
+              <form method="post" action="traitement.php">
+                <p>
+                    <label for="ameliorer">
+                    Votre message:
+                    </label>
+                    <br />
+                    
+                    <textarea name="ameliorer" id="ameliorer" rows="10" cols="50"></textarea>       
+                </p>
+            </form>
+            <input type="submit" value="envoyer" />
         </form>
       </div>
     </container> 
@@ -105,6 +103,9 @@
   <footer>
     <div class="CGU">
       <a href="CGV.html">CGU</a> 
+  </div>
+  <div>
+    <a href="tarif.html">Nos tarifs</a>
   </div>
     <div class="reseau">
       <img class="social" src="img/twitter.png" alt="twitter">
