@@ -103,6 +103,7 @@ textarea {
   border-radius: 5px;
   border: 3px solid blue;
 }
+
 /* ----------- */
 
 
@@ -119,14 +120,14 @@ header{
   display:flex;
   flex-direction: column;
   align-items: center;
-  height:auto;
+  height: auto;
   background: url("../img/background_header.jpg");
   background-repeat: no-repeat;  
 }
 
 footer{
   display:flex;
-  height: 10vh;
+  height: 8vh;
   background-color: rgb(31, 30, 30);
   align-items: center;
   justify-content: space-between;
@@ -139,28 +140,36 @@ footer{
 .CGU{
   margin-left: 5vw;
 }
+.menu{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
 
-
+.menu-base li{
+  list-style-type: none;
+  display:none;
+}
 ul{
   list-style-type: none;
+  
 }
 li{
   text-align: center;
   margin-top: 1em;
-  height: 10vh;
+  width: 100vw;
+
 }
 li img{
   width: 40vh;
   height: auto;
+ 
 }
-.main-logo{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
+
 .logo{
- width:40vh;
+ width:40vw;
 height: auto;
+
 }
 .main-nav{
   width: 100%;
@@ -177,6 +186,7 @@ height: auto;
 .menu div{
   display: flex;
   flex-direction: column;
+  
 }
 .menu-checkbox:checked ~.menu{
   max-height: 1000px;
@@ -204,7 +214,7 @@ height: auto;
   max-height:0;
   width: 100vw;
 }
-/* Menu bacgroung Img */
+/* Menu backgroung Img */
 .contact{
   background-image: url("../img/background_contact.png");
   background-size: cover;
@@ -263,25 +273,17 @@ container h1{
 /* TouchPad Code */
 
 @media screen and (min-width:768px){
-  header{
-    height: 30vh;
-   
-  }
+
   .menu-toggle{
     display:none;
   }
-  .menu{
-    display: flex;
-    overflow: visible;
-    justify-content: space-around;
-    max-width: 100vw;
+  .menu-base{
+    display:flex;
   }
-  .menu div{
-    flex-direction: row;
+  .menu-base li{
+    display: block;
   }
   li{
-    display:flex;
-    justify-content: center;
     width: 100%;
   }
   li img{
@@ -291,7 +293,6 @@ container h1{
   container{
     max-width: 80%;
     margin-left: 10%;
-    
   }
   .columns{
     display:flex;
@@ -300,13 +301,34 @@ container h1{
     margin-right:5%;
   }
   .scroll_horizontal{
+    max-height: 50vh;
+    margin-top: 1em;
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: nowrap;
-    overflow-x: auto;*/
+    flex-wrap: nowrap;
+    overflow-y: scroll;
   }
+  #team{
+    max-height: 20vh;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width:1024px){
+
+header{
+  flex-direction: row;
+}
+.menu-base{
+  flex-direction: column;
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
+.logo{
+  margin-left: 10%;
+}
 }
 
 
