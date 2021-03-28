@@ -309,8 +309,13 @@ width:50%;
   width: 70vw;
   height: auto;
 }
-
-
+table{
+  margin:1em;
+  border-collapse: collapse;
+}
+td, th{
+  border: solid 1px black;
+}
 
 
 /* TouchPad Code */
@@ -402,7 +407,10 @@ li img{
   max-height: 50vh;
 }
 }
-
+iframe{
+  width: 80%;
+  margin: auto;
+}
 
 
 
