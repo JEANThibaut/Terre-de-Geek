@@ -110,7 +110,6 @@ textarea {
 body{
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
-  /* height:100%; */
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -372,10 +371,10 @@ td, th{
     display: block;
   }
 
-  footer{
+  /* footer{
     position:fixed;
     bottom:0;
-  }
+  } */
 header{ 
   flex-direction: row;
 }
