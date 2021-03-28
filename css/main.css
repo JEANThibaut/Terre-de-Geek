@@ -309,8 +309,13 @@ width:50%;
   width: 70vw;
   height: auto;
 }
-
-
+table{
+  margin:1em;
+  border-collapse: collapse;
+}
+td{
+  border: solid 1px black;
+}
 
 
 /* TouchPad Code */
