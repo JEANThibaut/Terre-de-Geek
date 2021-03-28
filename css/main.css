@@ -407,7 +407,10 @@ li img{
   max-height: 50vh;
 }
 }
-
+iframe{
+  width: 80%;
+  margin: auto;
+}
 
 
 
