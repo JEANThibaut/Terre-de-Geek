@@ -371,10 +371,10 @@ td, th{
     display: block;
   }
 
-  /* footer{
+  footer{
     position:fixed;
     bottom:0;
-  } */
+  }
 header{ 
   flex-direction: row;
 }
