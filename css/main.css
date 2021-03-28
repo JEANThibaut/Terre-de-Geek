@@ -313,7 +313,7 @@ table{
   margin:1em;
   border-collapse: collapse;
 }
-td{
+td, th{
   border: solid 1px black;
 }
 
