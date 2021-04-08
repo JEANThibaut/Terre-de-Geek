@@ -105,7 +105,9 @@ textarea {
 }
 
 /* ----------- */
-
+p{
+  font-size: 1em;
+}
 
 body{
   font-family: 'Open Sans', sans-serif;
@@ -113,6 +115,8 @@ body{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
+  color:white;
+  font-size: 1em;
 }
 
 header{
@@ -132,6 +136,7 @@ footer{
   background-color: rgb(31, 30, 30);
   align-items: center;
   justify-content: space-between;
+
 }
 .social{
   width: 3vh;
@@ -217,50 +222,40 @@ height: auto;
 }
 /* Menu backgroung Img */
 .contact{
-  background-image: url("../img/background_contact.png");
+  background-image: url("../img/cutBackground_contact.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .products{
-  background-image: url("../img/background_products.png");
+  background-image: url("../img/cutBackground_products.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .services{
-  background-image: url("../img/background_services.png");
+  background-image: url("../img/cutBackground_services.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .index{
-  background-image: url("../img/background_accueil.png");
+  background-image: url("../img/cutBackground_acceuil.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.title_container{
-  padding: 0;
-  display:flex;
-  text-align: center;
-}
-.title_container h1{
-  font-size: 2em;
+/* .container p{
+  font-size: 0.8em;
   margin:0;
-}
-.title_container p{
-  font-size: 1.2em;
-  margin:0;
-}
+} */
 
-container{
+.container{
   display:flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9) ;
-  width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
   margin-top: 1em;
   margin-bottom: 1em;
   padding-bottom: 2em;
@@ -268,19 +263,21 @@ container{
   text-align: center;
 }
 
-container h1{
+.container h1{
   font-family: 'Orbitron', sans-serif;
   text-align: center;
+  font-size: 1.2em;
 }
-container h2{
+.container h2{
   font-family: 'Orbitron', sans-serif;
   text-align: center;
+  font-size: 1em;
 }
-container img{
+.container img{
 margin:auto;
 width:50%;
 }
-
+ 
 .scroll_horizontal{
   margin-left: 5%;
   margin-right: 5%;
@@ -289,19 +286,19 @@ width:50%;
   overflow-x: auto;
 }
 
-.scroll_horizontal container section{
+.scroll_horizontal section{
   display:flex;
   flex-direction: column;
   
 }
-.scroll_horizontal container h2{
+.scroll_horizontal h2{
   margin-bottom: .5em;
 }
-.scroll_horizontal container section p{
+.scroll_horizontal section p{
   font-size: 20px;
   margin-top: 1em;;
 }
-.scroll_horizontal container section img{
+.scroll_horizontal section img{
   margin: auto;
 }
 #ameliorer{
@@ -316,12 +313,22 @@ td, th{
   border: solid 1px black;
 }
 
-
 /* TouchPad Code */
 
 @media screen and (min-width:768px){
-
-  .menu-toggle{
+  .products{
+    background-image: url("../img/background_products.png");
+  }
+  .index{
+    background-image: url("../img/background_accueil.png");
+  }
+  .services{
+    background-image: url("../img/background_services.png");
+  }
+  .contact{
+    background-image: url("../img/background_contact.png");
+  }
+    .menu-toggle{
     display:none;
   }
   .menu-base{
@@ -340,7 +347,7 @@ td, th{
     max-width: 20vw;
     height: auto;
   }
-  container{
+  .container{
     max-width: 80%;
     margin-left: 10%;
   }
@@ -375,41 +382,41 @@ td, th{
     position:fixed;
     bottom:0;
   }
-header{ 
-  flex-direction: row;
-}
-.menu-base{
-  flex-direction: column;
-  margin-left: 30%;
-  margin-bottom: 2%;
-}
-li img{
-  width: 15vw;
-  height: auto;
-}
-.scroll_horizontal{
-  display: block;
-}
-.logo{
-  margin-left: 10%;
-  width: 20vw;
-}
-.landing{
-  display:flex;
-  flex-direction: row;
-}
-.columns{
-  margin: 0 0 auto;
-}
-#team{
-  width: 100%;
-  max-height: 50vh;
-}
-}
-iframe{
-  width: 80%;
-  margin: auto;
-}
+  header{ 
+    flex-direction: row;
+  }
+  .menu-base{
+    flex-direction: column;
+    margin-left: 30%;
+    margin-bottom: 2%;
+  }
+  li img{
+    width: 15vw;
+    height: auto;
+  }
+  .scroll_horizontal{
+    display: block;
+  }
+  .logo{
+    margin-left: 10%;
+    width: 20vw;
+  }
+  .landing{
+    display:flex;
+    flex-direction: row;
+  }
+  .columns{
+    margin: 0 0 auto;
+  }
+  #team{
+    width: 100%;
+    max-height: 50vh;
+  }
+  }
+  iframe{
+    width: 80%;
+    margin: auto;
+  }
 
 
 
