@@ -115,6 +115,8 @@ body{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
+  color:white;
+  font-size: 1em;
 }
 
 header{
@@ -134,6 +136,7 @@ footer{
   background-color: rgb(31, 30, 30);
   align-items: center;
   justify-content: space-between;
+
 }
 .social{
   width: 3vh;
@@ -219,25 +222,25 @@ height: auto;
 }
 /* Menu backgroung Img */
 .contact{
-  background-image: url("../img/background_contact.png");
+  background-image: url("../img/cutBackground_contact.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .products{
-  background-image: url("../img/background_products.png");
+  background-image: url("../img/cutBackground_products.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .services{
-  background-image: url("../img/background_services.png");
+  background-image: url("../img/cutBackground_services.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .index{
-  background-image: url("../img/background_accueil.png");
+  background-image: url("../img/cutBackground_acceuil.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -251,9 +254,8 @@ height: auto;
 .container{
   display:flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9) ;
-  width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
   margin-top: 1em;
   margin-bottom: 1em;
   padding-bottom: 2em;
@@ -315,8 +317,19 @@ td, th{
 /* TouchPad Code */
 
 @media screen and (min-width:768px){
-
-  .menu-toggle{
+  .products{
+    background-image: url("../img/background_products.png");
+  }
+  .index{
+    background-image: url("../img/background_accueil.png");
+  }
+  .services{
+    background-image: url("../img/background_services.png");
+  }
+  .contact{
+    background-image: url("../img/background_contact.png");
+  }
+    .menu-toggle{
     display:none;
   }
   .menu-base{
